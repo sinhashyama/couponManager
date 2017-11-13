@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nB7-Sk-bfK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CouponDetails-->
+        <scene sceneID="05P-FQ-Bsl">
+            <objects>
+                <viewController id="cm1-S3-TX4" userLabel="CouponDetails" customClass="CouponDetailsVC" customModule="couponManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qoZ-wV-U5Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="X51-Mw-eP9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nQn-Fk-blt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrr-44-hc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5917.6000000000004" y="142.57871064467767"/>
+        </scene>
+        <!--AddEditCoupon-->
+        <scene sceneID="0o0-wD-0b8">
+            <objects>
+                <viewController id="rgm-Pe-mgN" userLabel="AddEditCoupon" customClass="CouponAddEditVC" customModule="couponManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="otb-vW-cu9"/>
+                        <viewControllerLayoutGuide type="bottom" id="IhU-bJ-HRx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KL8-qR-W5r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRZ-p1-XCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4039" y="804"/>
+        </scene>
+        <!--settingPage-->
+        <scene sceneID="4F6-4h-Rzt">
+            <objects>
+                <viewController id="BZx-Dk-Naq" userLabel="settingPage" customClass="CMSettingsVC" customModule="couponManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zKW-GY-eNr"/>
+                        <viewControllerLayoutGuide type="bottom" id="V3Y-0X-8KT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mMz-kX-qTA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Gu-zz-2QE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3161" y="807"/>
+        </scene>
+        <!--SeetingPageMenu-->
+        <scene sceneID="WJ9-1R-SW4">
+            <objects>
+                <tableViewController id="QQK-HT-via" userLabel="SeetingPageMenu" customClass="CMSettingsOptionTableVC" customModule="couponManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="p3E-pj-F9B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xy3-Jj-TZe">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xy3-Jj-TZe" id="zm6-SI-694">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QQK-HT-via" id="DmK-f8-p9t"/>
+                            <outlet property="delegate" destination="QQK-HT-via" id="bfc-Be-IGa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2r-DU-Iod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2225" y="804"/>
+        </scene>
+        <!--CollectionVC-->
+        <scene sceneID="5q2-x5-83Y">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2K-j2-1G2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Psj-K9-Lh3" customClass="CMCollectionVC" customModule="couponManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iw3-N0-iHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="elF-S2-DzD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uF8-jB-QD0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2eV-Dx-wrM">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="HkG-JW-Oeb">
+                            <connections>
+                                <action selector="menuActionTapped:" destination="Psj-K9-Lh3" id="6ZI-7G-b3H"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="J0u-HZ-ftd">
+                            <connections>
+                                <action selector="searchActionTapped:" destination="Psj-K9-Lh3" id="zhu-rm-oqB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="HkG-JW-Oeb" id="G3g-dd-fPN"/>
+                        <outlet property="navBarItem" destination="2eV-Dx-wrM" id="23h-o1-9ek"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4900" y="112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MAJ-MY-zvN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nB7-Sk-bfK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P0W-AO-Q5Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Psj-K9-Lh3" kind="relationship" relationship="rootViewController" id="fF6-lb-DTU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nd4-Q6-WK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3960.8000000000002" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>
